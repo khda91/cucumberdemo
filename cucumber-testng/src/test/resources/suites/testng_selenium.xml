@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Cucumber Selenide simple test">
+
+    <test name="Selenide">
+        <packages>
+            <package name="com.epam.tc.automation.cucumber.demo.testng.tests.selenium"/>
+        </packages>
+    </test>
+
+</suite>
