@@ -10,12 +10,13 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"io.qameta.allure.cucumberjvm.AllureCucumberJvm"},
         features = { "classpath:com.epam.tc.automation.cucumber.demo.junit.tests" },
-        glue = { "classpath:com.epam.tc.automation.cucumber.demo.junit.tests.selenium" }
+        glue = { "classpath:com.epam.tc.automation.cucumber.demo.junit.tests.selenium" },
+        tags = {"@multiBefore2"}
 )
 public class RunAcceptanceTest {
 
     @BeforeClass
     public static void setUp() {
-        WebDriverManager.chromedriver().setup();
+        WebDriverManager.firefoxdriver().setup();
     }
 }
